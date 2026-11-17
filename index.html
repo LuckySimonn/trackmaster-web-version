@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Replaced by the `--base-href` argument of `flutter build web`. -->
+  <base href="/trackmaster-web-version/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Trackmaster: sort songs from your Spotify playlist by release year. A pass-the-phone party game.">
+  <meta name="referrer" content="no-referrer">
+  <!-- Only the app itself, Spotify, and Google's font server (Flutter's text
+       fonts) may be contacted. -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'wasm-unsafe-eval';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: blob: https://i.scdn.co https://*.scdn.co https://mosaic.scdn.co https://image-cdn-ak.spotifycdn.com https://image-cdn-fa.spotifycdn.com;
+    connect-src 'self' https://api.spotify.com https://accounts.spotify.com https://i.scdn.co https://*.scdn.co https://*.spotifycdn.com https://fonts.gstatic.com;
+    font-src 'self' https://fonts.gstatic.com;
+    worker-src 'self' blob:;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'none'">
+  <meta name="theme-color" content="#22104A">
+
+  <!-- iOS: "Add to Home Screen" opens it like an app. -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Trackmaster">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>Trackmaster</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body { margin: 0; height: 100%; background: #22104A; }
+  </style>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
